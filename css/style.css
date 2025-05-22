@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: arial;
     font-size: 18px;
     background-color: #2c6563;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,48 +25,51 @@ section {
     height: 100vh;
 }
 
+/**/
+
 .welcome {
-position: relative;
-width: 100%;
-height: 100vh;
-overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .background-video {
-position: absolute;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -1;
-transform: translate(-50%, -50%);
-object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
-.content{
+.content {
     position: relative;
     z-index: 1;
-    color: #2c6563;
+    color: #875fd0;
     text-align: center;
     font-size: 120px;
 }
 
+/**/
 .container {
     background-color: #c6c6ae;
     padding: 5px;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     overflow-y: scroll;
-    border: 15px solid #cc2d4e;
+    border: 15px solid #7e1038;
     border-radius: 20px;
-    box-shadow: 0px 0px 50px #33002240;
+    box-shadow: 0px 0px 50px #875fd0;
     transition: all 0.5s ease;
 }
 
 .container:hover {
-    box-shadow: 0px 0px 5px #330022;
+    box-shadow: 0px 0px 5px #875fd0;
 }
 
 .image_container {
@@ -82,6 +85,7 @@ object-fit: cover;
 h2 {
     text-align: center;
 }
+
 .tags {
     display: flex;
     flex-direction: column;
@@ -91,7 +95,8 @@ h2 {
     width: 100%;
     height: 100vh;
 }
-.tag-container{
+
+.tag-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,17 +105,18 @@ h2 {
     background-color: #c6c6ae;
     border-radius: 10px;
 }
+
 .tag-title {
-font-size: 20px;
-font-weight: bold;
-text-align: center;
-width: 100px;
-line-height: 100px;
-height: 100px;
-border: #330022 solid 2px;
-border-radius: 10px;
-text-align: center;
-cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    border: #875fd0 solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .tag-container:hover .tag-description {
@@ -123,6 +129,7 @@ cursor: pointer;
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0%);
         opacity: 1;
