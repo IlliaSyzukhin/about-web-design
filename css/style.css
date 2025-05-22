@@ -25,6 +25,27 @@ section {
     height: 100vh;
 }
 
+.site-footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+}
+
+.site-footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
 /**/
 
 .welcome {
